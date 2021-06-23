@@ -4,13 +4,13 @@ class Meal {
   final List ingredients;
 
   Meal({
-    required this.mealTime,
-    required this.name,
-    required this.imagePath,
-    required this.kiloCaloriesBurnt,
-    required this.timeTaken,
-    required this.preparation,
-    required this.ingredients,
+    this.mealTime,
+    this.name,
+    this.imagePath,
+    this.kiloCaloriesBurnt,
+    this.timeTaken,
+    this.preparation,
+    this.ingredients,
   });
 }
 

@@ -1,4 +1,5 @@
-import 'package:fitnessapp/ui/pages/profile_screen.dart';
+import 'package:fitnessapp/ui/pages/home/profile_screen.dart';
+import 'package:fitnessapp/ui/views/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: ProfileScreen(),
+      home: MyBottomNavyBar(),
     );
   }
 }
