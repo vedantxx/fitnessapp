@@ -229,16 +229,22 @@ class _SearchScreenState extends State<SearchScreen> {
                       height: 30,
                     ),
                     Container(
+
                       child: GridView(
                         shrinkWrap: true,
+
+                        // padding: const EdgeInsets.all(20),
+
                         scrollDirection: Axis.vertical,
                         physics: ClampingScrollPhysics(),
                         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                           maxCrossAxisExtent: 200.0,
+
                           mainAxisSpacing: 10.0,
                           // crossAxisSpacing: 10.0,
                         ),
                         children: List.generate(recipes.length, (index) {
+
                           return GridTile(
                             child: RecipeTile(
                               title: recipes[index].label,

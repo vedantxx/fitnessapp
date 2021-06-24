@@ -18,7 +18,7 @@ class _MyBottomNavyBarState extends State<MyBottomNavyBar> {
   final List<Widget> _children = [
     ProfileScreen(),
     SearchScreen(),
-    ExcerciseScreen(),
+    ExerciseScreen(),
     // Home(),
     // SearchFragment(),
     // CategoriesFragment(),
@@ -28,45 +28,53 @@ class _MyBottomNavyBarState extends State<MyBottomNavyBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      backgroundColor: const Color(0xFFE9E9E9),
       body: _children[currentIndex],
-      bottomNavigationBar: BottomNavyBar(
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(8),
+        child: ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(24)),
+          child: BottomNavyBar(
 
-        selectedIndex: currentIndex,
-        onItemSelected: (index){
-          setState(() {
-            currentIndex = index;
-          },
-          );
-        },
-        items: <BottomNavyBarItem>[
-          BottomNavyBarItem(
-              icon: Icon(Icons.home),
-              title: Text('Home'),
+            selectedIndex: currentIndex,
+            onItemSelected: (index){
+              setState(() {
+                currentIndex = index;
+              },
+              );
+            },
+            items: <BottomNavyBarItem>[
+              BottomNavyBarItem(
+                  icon: Icon(Icons.home),
+                  title: Text('Home'),
 
-              activeColor: Colors.blueAccent,
-              inactiveColor: Colors.black
-          ),
-          BottomNavyBarItem(
-              icon: Icon(Icons.search),
-              title: Text('Search'),
-              activeColor: Colors.blueAccent,
-              inactiveColor: Colors.black
-          ),
-          BottomNavyBarItem(
-              icon: Icon(Icons.person),
-              title: Text('Categories'),
-              activeColor: Colors.blueAccent,
-              inactiveColor: Colors.black
-          ),
-          // BottomNavyBarItem(
-          //   icon: Icon(Icons.favorite_border),
-          //   title: Text('Favorites'),
-          //   activeColor: Colors.blueAccent,
-          //   inactiveColor: Colors.black,
-          //
-          // ),
-        ],
+                  activeColor: Colors.blueAccent,
+                  inactiveColor: Colors.black
+              ),
+              BottomNavyBarItem(
+                  icon: Icon(Icons.search),
+                  title: Text('Search'),
+                  activeColor: Colors.blueAccent,
+                  inactiveColor: Colors.black
+              ),
+              BottomNavyBarItem(
+                  icon: Icon(Icons.person),
+                  title: Text('Categories'),
+                  activeColor: Colors.blueAccent,
+                  inactiveColor: Colors.black
+              ),
+              // BottomNavyBarItem(
+              //   icon: Icon(Icons.favorite_border),
+              //   title: Text('Favorites'),
+              //   activeColor: Colors.blueAccent,
+              //   inactiveColor: Colors.black,
+              //
+              // ),
+            ],
 
+          ),
+        ),
       ),
     );
   }
