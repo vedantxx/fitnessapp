@@ -1,5 +1,12 @@
 # fitnessapp
 
+<!-- ![](fitnessapp-promo-video.mp4) -->
+
+
+https://user-images.githubusercontent.com/72628288/127960181-ce6121fe-59c1-4f3b-b9c0-5694326f3e5d.mp4
+
+
+
 A new Flutter project.
 
 ## Getting Started
