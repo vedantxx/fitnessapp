@@ -82,70 +82,70 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
                       color: Colors.white,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 40.0),
-                    child: Container(
-                      height: 226,
-                      width: MediaQuery.of(context).size.width,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: levels.length,
-                        itemBuilder: (BuildContext context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.only(right: 10),
-                            child: Container(
-                              height: 226,
-                              width: 195,
-                              decoration: BoxDecoration(
-                                color: Color(0xFF232441),
-                                borderRadius: BorderRadius.circular(20.0),
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.only(
-                                    left: 20.0, top: 30.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "I am",
-                                      style: GoogleFonts.lato(
-                                        fontSize: 30,
-                                        color: Colors.blue,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 10.0,
-                                    ),
-                                    Text(
-                                      levels[index],
-
-                                      style: GoogleFonts.lato(
-                                        fontSize: 30,
-                                        color: Colors.blue,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 20.0,
-                                    ),
-                                    Text(
-                                      "I have never trained",
-                                      style: GoogleFonts.lato(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w400,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                    ),
-                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(top: 40.0),
+                  //   child: Container(
+                  //     height: 226,
+                  //     width: MediaQuery.of(context).size.width,
+                  //     child: ListView.builder(
+                  //       scrollDirection: Axis.horizontal,
+                  //       itemCount: levels.length,
+                  //       itemBuilder: (BuildContext context, index) {
+                  //         return Padding(
+                  //           padding: const EdgeInsets.only(right: 10),
+                  //           child: Container(
+                  //             height: 226,
+                  //             width: 195,
+                  //             decoration: BoxDecoration(
+                  //               color: Color(0xFF232441),
+                  //               borderRadius: BorderRadius.circular(20.0),
+                  //             ),
+                  //             child: Padding(
+                  //               padding: const EdgeInsets.only(
+                  //                   left: 20.0, top: 30.0),
+                  //               child: Column(
+                  //                 crossAxisAlignment: CrossAxisAlignment.start,
+                  //                 children: [
+                  //                   Text(
+                  //                     "I am",
+                  //                     style: GoogleFonts.lato(
+                  //                       fontSize: 30,
+                  //                       color: Colors.blue,
+                  //                       fontWeight: FontWeight.bold,
+                  //                     ),
+                  //                   ),
+                  //                   SizedBox(
+                  //                     height: 10.0,
+                  //                   ),
+                  //                   Text(
+                  //                     levels[index],
+                  //
+                  //                     style: GoogleFonts.lato(
+                  //                       fontSize: 30,
+                  //                       color: Colors.blue,
+                  //                       fontWeight: FontWeight.bold,
+                  //                     ),
+                  //                   ),
+                  //                   SizedBox(
+                  //                     height: 20.0,
+                  //                   ),
+                  //                   Text(
+                  //                     "I have never trained",
+                  //                     style: GoogleFonts.lato(
+                  //                       fontSize: 12,
+                  //                       fontWeight: FontWeight.w400,
+                  //                       color: Colors.white,
+                  //                     ),
+                  //                   ),
+                  //                 ],
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         );
+                  //       },
+                  //     ),
+                  //   ),
+                  // ),
                   Padding(
                     padding:
                     const EdgeInsets.only(right: 40.0, top: 40, bottom: 40),

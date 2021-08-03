@@ -1,4 +1,5 @@
 import 'package:fitnessapp/ui/pages/workout/mode.dart';
+import 'package:fitnessapp/ui/pages/workout/workout_videos/workout_videos_home.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -102,10 +103,18 @@ class _WorkoutHomeViewState extends State<WorkoutHomeView> {
                           borderRadius: BorderRadius.circular(40.0),
                         ),
                         child: Center(
-                          child: Icon(
-                            Icons.play_arrow,
-                            size: 40,
-                            color: Colors.white,
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HomePage()));
+                            },
+                            child: Icon(
+                              Icons.play_arrow,
+                              size: 40,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),
